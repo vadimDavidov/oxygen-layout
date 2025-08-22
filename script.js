@@ -47,6 +47,7 @@ const webEl = document.getElementById('statistics-web');
 const logoDesignEl = document.getElementById('statistics-logo');
 const printDesignEl = document.getElementById('statistics-print');
 const mobileAppEl = document.getElementById('statistics-mobile');
+// To edit values in 'statistics' section, just change numbers below:
 const webValue = (webEl.dataset.web = '305');
 const logoValue = (logoDesignEl.dataset.logo = '220');
 const printValue = (printDesignEl.dataset.print = '52');
@@ -62,6 +63,7 @@ const brandingEl = document.getElementById('branding-value');
 const designEl = document.getElementById('design-value');
 const developmentEl = document.getElementById('development-value');
 const brandingLineEl = document.getElementById('line-1');
+// To edit values in 'expertise' section, just change numbers below:
 const brandingValue = (brandingEl.dataset.branding = '90');
 const designValue = (designEl.dataset.design = '80');
 const developmentValue = (developmentEl.dataset.development = '85');
@@ -77,6 +79,7 @@ brandingLineEl.style.backgroundImage = `linear-gradient(to right, black ${brandi
 const basicEl = document.getElementById('basic');
 const starterEl = document.getElementById('starter');
 const profyEl = document.getElementById('profy');
+// To edit values in 'pricing' section, just change numbers below:
 const basicValue = (basicEl.dataset.basic = '29');
 const starterValue = (starterEl.dataset.starter = '50');
 const profyValue = (starterEl.dataset.starter = '70');

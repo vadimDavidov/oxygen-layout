@@ -7,16 +7,23 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
     rel="stylesheet">
+  <!-- Google geocode -->
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <!-- Leaflet map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script async defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <link rel='stylesheet' href='/css/reset.css'>
   <link rel='stylesheet' href='/css/style.css'>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src='script.js'></script>
+  <script async defer src='script.js'></script>
   <title>Oxygen layout</title>
 </head>
 
@@ -405,9 +412,9 @@
           <textarea class="textarea-message textarea" name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
           <button class="send-message" type="button">SEND MESSAGE</button>
         </form>
-        <div class="location-map">
+        <div class="location-map" id="map">
           <!-- * here should be a map with user location point, may be 'leaflet' -->
-          <img src="/images/map.png" alt="map-image">
+          <!-- <img src="/images/map.png" alt="map-image"> -->
         </div>
       </div>
     </div>

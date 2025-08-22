@@ -148,13 +148,13 @@ body {
 }
 #line-2 {
   background-color: #fff;
-  background-image: linear-gradient(to right, black 80%, transparent 20%);
+  /* background-image: linear-gradient(to right, black 80%, transparent 20%); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 #line-3 {
   background-color: #fff;
-  background-image: linear-gradient(to right, black 85%, transparent 15%);
+  /* background-image: linear-gradient(to right, black 85%, transparent 15%); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

@@ -63,6 +63,8 @@ const brandingEl = document.getElementById('branding-value');
 const designEl = document.getElementById('design-value');
 const developmentEl = document.getElementById('development-value');
 const brandingLineEl = document.getElementById('line-1');
+const designLineEl = document.getElementById('line-2');
+const developmentLineEl = document.getElementById('line-3');
 // To edit values in 'expertise' section, just change numbers below:
 const brandingValue = (brandingEl.dataset.branding = '90');
 const designValue = (designEl.dataset.design = '80');
@@ -73,6 +75,12 @@ designEl.innerHTML = designValue;
 developmentEl.innerHTML = developmentValue;
 brandingLineEl.style.backgroundImage = `linear-gradient(to right, black ${brandingValue}%, transparent ${
   100 - Number(brandingValue)
+}%)`;
+designLineEl.style.backgroundImage = `linear-gradient(to right, black ${designValue}%, transparent ${
+  100 - Number(designValue)
+}%)`;
+developmentLineEl.style.backgroundImage = `linear-gradient(to right, black ${developmentValue}%, transparent ${
+  100 - Number(developmentValue)
 }%)`;
 
 // * Pricing Dataset

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -631,13 +635,6 @@ body {
   font-weight: 400;
   line-height: 32px;
   margin-bottom: 57px;
-}
-.footerlink {
-  background-color: #373a39;
-  cursor: pointer;
-}
-.footerlink:hover {
-  background-color: #4a4e4d;
 }
 
 .bottom {

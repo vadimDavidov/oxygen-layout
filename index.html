@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__decor">
       <img class="mouse-shape" src="/images/mouse-shape.svg" alt="mouse-shape">
       <img class="mouse-dot" src="/images/mouse-dot.svg" alt="mouse-dot">
@@ -42,19 +42,19 @@
               <a href="#">HOME</a>
             </li>
             <li class="header__menu-item">
-              <a href="#">ABOUT US</a>
+              <a href="#about">ABOUT US</a>
             </li>
             <li class="header__menu-item">
-              <a href="#">PORTFOLIO</a>
+              <a href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="header__menu-item">
-              <a href="#">OUR TEAM</a>
+              <a href="#team">OUR TEAM</a>
             </li>
             <li class="header__menu-item">
-              <a href="#">BLOG</a>
+              <a href="#blog">BLOG</a>
             </li>
             <li class="header__menu-item">
-              <a href="#">CONTACT</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -68,7 +68,7 @@
   </header>
 
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__inner">
         <h2 class="about__title title">About Us</h2>
@@ -200,7 +200,7 @@
     </div>
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio__inner">
         <div class="portfolio__top">
@@ -238,7 +238,7 @@
     </div>
   </section>
 
-  <section class="quote">
+  <section class="quote" id="blog">
     <div class="container">
       <div class="quote__inner">
         <div class="quote__text">
@@ -309,7 +309,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <div class="team__inner">
         <h2 class="team__title title">Our Team</h2>
@@ -397,7 +397,7 @@
     </div>
   </section>
 
-  <section class="location">
+  <section class="location" id="contact">
     <div class="container">
       <div class="location__inner">
         <form class="location__details">
@@ -419,19 +419,19 @@
         <img src="/images/footer-logo.svg" alt="logo">
       </h2>
       <ul class="footer__social">
-        <li>FACEBOOK</li>
-        <li>TWITTER</li>
-        <li>GOOGLE+</li>
-        <li>BEHANCE</li>
-        <li>DRIBBLE</li>
-        <li>INSTAGRAM</li>
+        <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+        <li><a href="https://twitter.com">TWITTER</a></li>
+        <li><a href="">GOOGLE+</a></li>
+        <li><a href="https://www.behance.net">BEHANCE</a></li>
+        <li><a href="https://dribbble.com">DRIBBLE</a></li>
+        <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
       </ul>
       <div class="footer__details">
         <p>Mese Selimovica 52, Banja Luka - BiH</p>
         <a href="tel:00387-65-252-222">(00387) 65 252 222</a>
         <a href="mailto:info@mail.com">info@mail.com</a>
       </div>
-      <button class="footerlink">
+      <a class="footerlink" href="#header">
         <svg width="56px" height="56px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#ffffff" stroke-width="0.00032"
           transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -444,7 +444,7 @@
               fill="#fff"> </path>
           </g>
         </svg>
-      </button>
+      </a>
     </div>
   </footer>
 

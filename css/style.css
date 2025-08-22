@@ -3,7 +3,6 @@ body {
   height: 100vh;
   background-color: #f2f2f2;
   position: relative;
-  font-family: 'Montserat', 'sans-serif';
 }
 
 .header {
@@ -98,6 +97,9 @@ body {
 }
 .about__text {
   flex-basis: 770px;
+  color: #373a39;
+  font-weight: 300;
+  font-family: 'Open Sans', 'sans-serif';
 }
 .about__text--first-paragraph {
   margin-bottom: 20px;
@@ -119,7 +121,8 @@ body {
   flex-basis: 370px;
 }
 .branding__area,
-.design__area {
+.design__area,
+.development__area {
   display: flex;
   justify-content: space-between;
 }
@@ -139,7 +142,7 @@ body {
 }
 #line-1 {
   background-color: #fff;
-  background-image: linear-gradient(to right, black 90%, transparent 10%);
+  /* background-image: linear-gradient(to right, black 90%, transparent 10%); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

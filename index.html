@@ -14,8 +14,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
     rel="stylesheet">
-  <!-- Google geocode -->
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <!-- Leaflet map -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -104,23 +102,20 @@
         <div class="expertise__content">
           <div class="expertise__indicators">
             <div class="expertise__graph">
-
               <input class="line" id="line-1" type="text"></input>
               <div class="branding__area">
                 <label class="label-input" for="line-1">BRANDING</label>
-                <span class="line-value" id="branding-value" data-branding="90">90%</span>
+                <span class="line-value" id="branding-value" data-branding=""></span>
               </div>
-
               <input class="line" id="line-2" type="text"></input>
               <div class="design__area">
                 <label class="label-input" for="line-2">DESIGN</label>
-                <span class="line-value" id="design-value" data-branding="80">80%</span>
+                <span class="line-value" id="design-value" data-design=""></span>
               </div>
-
               <input class="line" id="line-3" type="text"></input>
-              <div class="branding__area">
+              <div class="development__area">
                 <label class="label-input" for="line-1">DEVELOPMENT</label>
-                <span class="line-value" id="branding-value" data-branding="85">85%</span>
+                <span class="line-value" id="development-value" data-development=""></span>
               </div>
             </div>
             <div class="expertise__text">
@@ -265,19 +260,19 @@
     <div class="container">
       <div class="statistics__items">
         <div class="statistics__web item">
-          <div class="statistics__number">305</div>
+          <div class="statistics__number" id="statistics-web" data-web=""></div>
           <div class="statistics__label">Web Designs</div>
         </div>
         <div class="statistics__web item">
-          <div class="statistics__number">220</div>
+          <div class="statistics__number" id="statistics-logo" data-logo=""></div>
           <div class="statistics__label">Logo Designs</div>
         </div>
         <div class="statistics__web item">
-          <div class="statistics__number">52</div>
+          <div class="statistics__number" id="statistics-print" data-print=""></div>
           <div class="statistics__label">Print Designs</div>
         </div>
         <div class="statistics__web item">
-          <div class="statistics__number">88</div>
+          <div class="statistics__number" id="statistics-mobile" data-mobile=""></div>
           <div class="statistics__label">Mobile Apps</div>
         </div>
       </div>
@@ -346,7 +341,7 @@
           <div class="pricing__inner">
             <div class="pricing__price">
               <div class="pricing__price-currency">$</div>
-              <div class="pricing__amount">29</div>
+              <div class="pricing__amount" id="basic" data-basic=""></div>
               <div class="pricing__unit">/ mo</div>
             </div>
             <ul class="pricing__description">
@@ -365,7 +360,7 @@
           <div class="pricing__inner">
             <div class="pricing__price">
               <div class="pricing__price-currency">$</div>
-              <div class="pricing__amount">50</div>
+              <div class="pricing__amount" id="starter" data-starter=""></div>
               <div class="pricing__unit">/ mo</div>
             </div>
             <ul class="pricing__description">
@@ -385,7 +380,7 @@
           <div class="pricing__inner">
             <div class="pricing__price">
               <div class="pricing__price-currency">$</div>
-              <div class="pricing__amount">70</div>
+              <div class="pricing__amount" id="profy" data-profy=""></div>
               <div class="pricing__unit">/ mo</div>
             </div>
             <ul class="pricing__description">
@@ -412,9 +407,7 @@
           <textarea class="textarea-message textarea" name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
           <button class="send-message" type="button">SEND MESSAGE</button>
         </form>
-        <div class="location-map" id="map">
-          <!-- * here should be a map with user location point, may be 'leaflet' -->
-          <!-- <img src="/images/map.png" alt="map-image"> -->
+        <div id="map">
         </div>
       </div>
     </div>

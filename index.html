@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='/css/reset.css'>
+  <link rel='stylesheet' href='/css/style.css'>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src='script.js'></script>
+  <title>Oxygen layout</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__decor">
+      <img class="mouse-shape" src="/images/mouse-shape.svg" alt="mouse-shape">
+      <img class="mouse-dot" src="/images/mouse-dot.svg" alt="mouse-dot">
+    </div>
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a class="logo" href="#"><img src="/images/Logo.svg" alt="logo-image"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu-list active">
+            <li class="header__menu-item">
+              <a href="#">HOME</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">ABOUT US</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">PORTFOLIO</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">OUR TEAM</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">BLOG</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <div class="header__content">
+      <h1 class="header__content-title">OXYGEN</h1>
+      <h3 class="header__content-subtitle">STARTER UI KIT</h3>
+    </div>
+  </header>
+
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="about__title title">About Us</h2>
+        <div class="about__text">
+          <p class="about__text--first-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+            commodi totam culpa, dolorum asperiores
+            iusto
+            quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi. In, fuga
+            blanditiis
+            non cum cupiditate dolore, accusantium odio doloremque quibusdam dignissimos nemo sed nisi, similique,
+            mollitia
+            et!
+            Autem laborum sint tenetur, earum facere veniam?
+          </p>
+          <p>Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex
+            distinctio
+            aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum maiores harum reiciendis vitae
+            doloribus
+            illum
+            voluptatibus nobis maxime assumenda ipsam tempora fugiat. Perspiciatis quibusdam hic cum tempore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise">
+    <div class="container">
+      <div class="expertise__inner">
+        <h2 class="expertise__title title">Our Expertise</h2>
+        <div class="expertise__content">
+          <div class="expertise__indicators">
+            <div class="expertise__graph">
+
+              <input class="line" id="line-1" type="text"></input>
+              <div class="branding__area">
+                <label class="label-input" for="line-1">BRANDING</label>
+                <span class="line-value" id="branding-value" data-branding="90">90%</span>
+              </div>
+
+              <input class="line" id="line-2" type="text"></input>
+              <div class="design__area">
+                <label class="label-input" for="line-2">DESIGN</label>
+                <span class="line-value" id="design-value" data-branding="80">80%</span>
+              </div>
+
+              <input class="line" id="line-3" type="text"></input>
+              <div class="branding__area">
+                <label class="label-input" for="line-1">DEVELOPMENT</label>
+                <span class="line-value" id="branding-value" data-branding="85">85%</span>
+              </div>
+            </div>
+            <div class="expertise__text">
+              <p class="expertise__text--first-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laudantium commodi totam culpa, dolorum
+                asperiores iusto
+                quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi.
+              </p>
+              <p>Autem laborum sint tenetur, earum facere veniam? Sunt fugiat veniam consectetur soluta quia ex tempora
+                quaerat,
+                perferendis! Itaque a praesentium saepe ex distinctio aliquid quis
+              </p>
+            </div>
+          </div>
+          <div class="expertise__specs">
+            <div class="specs__box-1 box">
+              <img class="specs__img" src="/images/graph-specs.svg" alt="graph-image">
+              <div class="specs__content">
+                <h4 class="specs__title">GRAPHIC DESIGN</h4>
+                <p class="specs__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                  lorem quis bibendum auctor, nisi elit consequat ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="specs__box-2 box">
+              <img class="specs__img" src="/images/monitor.svg" alt="graph-image">
+              <div class="specs__content">
+                <h4 class="specs__title">WEB DEVELOPMENT</h4>
+                <p class="specs__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                  lorem quis bibendum
+                  auctor, nisi elit consequat ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="specs__box-3 box">
+              <img class="specs__img" src="/images/speaker.svg" alt="graph-image">
+              <div class="specs__content">
+                <h4 class="specs__title">MARKETING</h4>
+                <p class="specs__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                  lorem quis bibendum auctor, nisi elit consequat ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="magic">
+    <div class="container">
+      <div class="magic__inner">
+        <img src="/images/magic.png" alt="magic-image">
+        <div class="magic__content">
+          <h2 class="magic__title title">Let’s make <br> magic.</h2>
+          <div class="magic__text">
+            <p class="magic__text--first-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam odio itaque. Molestiae aut dicta
+              accusantium
+              quod, modi ad alias enim dolor delectus iusto! Inventore tempora labore nobis doloribus optio nulla sit
+              corrupti
+              nostrum, tempore debitis pariatur minus maiores velit, autem ex eum distinctio error fugit. Itaque
+              voluptatum
+              quam
+              veritatis fuga impedit nulla dolor.
+            </p>
+            <p>
+              Nam dignissimos, ratione odit doloribus cum porro, aut. Ipsum nisi odio voluptatum, et, reprehenderit
+              accusamus, est
+              provident debitis dicta ullam esse assumenda, odit? Alias architecto enim pariatur libero ipsam mollitia
+              maiores minus
+              quibusdam numquam perspiciatis eveniet sit dolores eligendi inventore, ea voluptatum debitis iure,
+              repellendus
+              iste
+              culpa! Voluptatibus quam ipsum nisi odit deserunt qui, consectetur ducimus, quis officia quaerat sapiente
+              dolores, ad
+              libero! Tenetur provident, omnis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="portfolio__inner">
+        <div class="portfolio__top">
+          <div class="portfolio__title title">
+            <h2>Portfolio</h2>
+          </div>
+          <nav class="portfolio__nav">
+            <ul class="portfolio__nav-list active">
+              <li><a href="#">ALL</a></li>
+              <li><a href="#">BRANDING</a></li>
+              <li><a href="#">BRANDING</a></li>
+              <li><a href="#">PHOTOGRAPHY</a></li>
+              <li><a href="#">ILLUSTRATION</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="portfolio__collection">
+          <div class="portfolio__item-1 portfolio__item"></div>
+          <div class="portfolio__item-2 portfolio__item portfolio__item--active">
+            <p>OCCA CUPIDATAT</p>
+            <p class="portfolio__design-sign">DESIGN</p>
+          </div>
+          <div class="portfolio__item-3 portfolio__item"></div>
+          <div class="portfolio__item-4 portfolio__item"></div>
+          <div class="portfolio__item-5 portfolio__item"></div>
+          <div class="portfolio__item-6 portfolio__item"></div>
+          <div class="portfolio__item-7 portfolio__item"></div>
+          <div class="portfolio__item-8 portfolio__item span-8"></div>
+          <div class="portfolio__item-9 portfolio__item "></div>
+        </div>
+        <div class="portfolio__footer">
+          <a class="portfolio__link" href="#">VIEW MORE PROJECTS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="container">
+      <div class="quote__inner">
+        <div class="quote__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua.
+        </div>
+        <p class="quote__name">Gilbert Hammond</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <!-- * Here should be 'video' tag. When content will be known, it has to be remaked. -->
+    <img src="/images/video.png" alt="video-image" />
+  </section>
+
+  <section class="statistics">
+    <div class="container">
+      <div class="statistics__items">
+        <div class="statistics__web item">
+          <div class="statistics__number">305</div>
+          <div class="statistics__label">Web Designs</div>
+        </div>
+        <div class="statistics__web item">
+          <div class="statistics__number">220</div>
+          <div class="statistics__label">Logo Designs</div>
+        </div>
+        <div class="statistics__web item">
+          <div class="statistics__number">52</div>
+          <div class="statistics__label">Print Designs</div>
+        </div>
+        <div class="statistics__web item">
+          <div class="statistics__number">88</div>
+          <div class="statistics__label">Mobile Apps</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__carusel">
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/images/slider-1.jpg" alt="slide-1" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/images/slider-2.png" alt="slide-2" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/images/slider-3.jpg" alt="slide-3" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"> ⟪ </a>
+        <a class="next" onclick="plusSlides(1)"> ⟫ </a>
+      </div>
+      <br>
+      <div class="dots" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <div class="team__inner">
+        <h2 class="team__title title">Our Team</h2>
+        <div class="team__persons">
+          <div class="bernard">
+            <img src="/images/bernard.jpg" alt="bernard-image">
+            <p class="team__fullName">BERNARD SPARKS</p>
+          </div>
+          <div class="bernard">
+            <img src="/images/minerva.jpg" alt="minerva-image">
+            <p class="team__fullName">MINERVA BENSON</p>
+          </div>
+          <div class="bernard">
+            <img src="/images/jared.jpg" alt="jared-image">
+            <p class="team__fullName">JARED OLSON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="container">
+      <h2 class="pricing__title title">Pricing Plans</h2>
+      <div class="pricing__options">
+
+        <div class="pricing__item">
+          <h4 class="pricing__subtitle">Basic</h4>
+          <div class="pricing__inner">
+            <div class="pricing__price">
+              <div class="pricing__price-currency">$</div>
+              <div class="pricing__amount">29</div>
+              <div class="pricing__unit">/ mo</div>
+            </div>
+            <ul class="pricing__description">
+              <li>1 Logo Design</li>
+              <li>1 Website Design</li>
+              <li>1 Domain Free</li>
+              <li>3 Month License</li>
+              <li>1 GB Storage</li>
+            </ul>
+            <a href="#" class="pricing__link">CHOOSE PLAN</a>
+          </div>
+        </div>
+
+        <div class="pricing__item">
+          <h4 class="pricing__subtitle">Starter</h4>
+          <div class="pricing__inner">
+            <div class="pricing__price">
+              <div class="pricing__price-currency">$</div>
+              <div class="pricing__amount">50</div>
+              <div class="pricing__unit">/ mo</div>
+            </div>
+            <ul class="pricing__description">
+              <li>2 Logo Design</li>
+              <li>2 Website Design</li>
+              <li>1 Domain Free</li>
+              <li>6 Month License</li>
+              <li>1 GB Storage</li>
+            </ul>
+            <a href="#" class="pricing__link">CHOOSE PLAN</a>
+          </div>
+        </div>
+
+
+        <div class="pricing__item">
+          <h4 class="pricing__subtitle">Professional</h4>
+          <div class="pricing__inner">
+            <div class="pricing__price">
+              <div class="pricing__price-currency">$</div>
+              <div class="pricing__amount">70</div>
+              <div class="pricing__unit">/ mo</div>
+            </div>
+            <ul class="pricing__description">
+              <li>3 Logo Design</li>
+              <li>3 Website Design</li>
+              <li>2 Domain Free</li>
+              <li>12 Month License</li>
+              <li>2 GB Storage</li>
+            </ul>
+            <a class="pricing__link" href="#">CHOOSE PLAN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location">
+    <div class="container">
+      <div class="location__inner">
+        <form class="location__details">
+          <h2 class="location__title title">Get in Touch</h2>
+          <input class="input-name input" type="text" placeholder="YOUR NAME">
+          <input class="input-email input" type="email" placeholder="VALID EMAIL">
+          <textarea class="textarea-message textarea" name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
+          <button class="send-message" type="button">SEND MESSAGE</button>
+        </form>
+        <div class="location-map">
+          <!-- * here should be a map with user location point, may be 'leaflet' -->
+          <img src="/images/map.png" alt="map-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">
+        <img src="/images/footer-logo.svg" alt="logo">
+      </h2>
+      <ul class="footer__social">
+        <li>FACEBOOK</li>
+        <li>TWITTER</li>
+        <li>GOOGLE+</li>
+        <li>BEHANCE</li>
+        <li>DRIBBLE</li>
+        <li>INSTAGRAM</li>
+      </ul>
+      <div class="footer__details">
+        <p>Mese Selimovica 52, Banja Luka - BiH</p>
+        <a href="tel:00387-65-252-222">(00387) 65 252 222</a>
+        <a href="mailto:info@mail.com">info@mail.com</a>
+      </div>
+      <button class="footerlink">
+        <svg width="56px" height="56px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#ffffff" stroke-width="0.00032"
+          transform="matrix(1, 0, 0, 1, 0, 0)">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g id="icomoon-ignore"> </g>
+            <path
+              d="M16.767 12.809l-0.754-0.754-6.035 6.035 0.754 0.754 5.281-5.281 5.256 5.256 0.754-0.754-3.013-3.013z"
+              fill="#fff"> </path>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <section class="bottom">
+    <div class="container">
+      <p>@2015 Oxygen Theme</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,4 +1,12 @@
 'use strict';
+// * Burger menu
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu--open');
+});
+
 // * Slider
 let slides = document.querySelectorAll('.mySlides');
 let dots = document.querySelectorAll('.dot');

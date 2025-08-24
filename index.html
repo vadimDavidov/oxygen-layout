@@ -43,24 +43,12 @@
             <span></span>
           </button>
           <ul class="header__menu-list menu-list active">
-            <li class="header__menu-item">
-              <a href="#">HOME</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#about">ABOUT US</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#team">OUR TEAM</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#blog">BLOG</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#contact">CONTACT</a>
-            </li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#team">OUR TEAM</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -99,7 +87,7 @@
     </div>
   </section>
 
-  <!-- <section class="expertise">
+  <section class="expertise">
     <div class="container">
       <div class="expertise__inner">
         <h2 class="expertise__title title">Our Expertise</h2>
@@ -167,12 +155,15 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="magic">
+  <section class="magic">
     <div class="container">
       <div class="magic__inner">
-        <img src="/images/magic.png" alt="magic-image">
+        <div class="magic__img">
+          <img src="/images/magic.png" alt="magic-image">
+        </div>
+
         <div class="magic__content">
           <h2 class="magic__title title">Let’s make <br> magic.</h2>
           <div class="magic__text">
@@ -202,17 +193,22 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio__inner">
         <div class="portfolio__top">
           <div class="portfolio__title title">
             <h2>Portfolio</h2>
           </div>
-          <nav class="portfolio__nav">
-            <ul class="portfolio__nav-list active">
+          <nav class="portfolio__nav menu-1">
+            <button class="menu__btn-1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="portfolio__nav-list menu__list-1 active">
               <li><a href="#">ALL</a></li>
               <li><a href="#">BRANDING</a></li>
               <li><a href="#">BRANDING</a></li>
@@ -240,9 +236,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="quote" id="blog">
+  <section class="quote" id="blog">
     <div class="container">
       <div class="quote__inner">
         <div class="quote__text">
@@ -253,13 +249,13 @@
         <p class="quote__name">Gilbert Hammond</p>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="video">
+  <section class="video">
     <img src="/images/video.png" alt="video-image" />
-  </section> -->
+  </section>
 
-  <!-- <section class="statistics">
+  <section class="statistics">
     <div class="container">
       <div class="statistics__items">
         <div class="statistics__web item">
@@ -280,9 +276,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="section__carusel">
+  <section class="section__carusel">
     <div class="container">
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -310,9 +306,9 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="team" id="team">
+  <section class="team" id="team">
     <div class="container">
       <div class="team__inner">
         <h2 class="team__title title">Our Team</h2>
@@ -332,9 +328,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="pricing">
+  <section class="pricing">
     <div class="container">
       <h2 class="pricing__title title">Pricing Plans</h2>
       <div class="pricing__options">
@@ -394,9 +390,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="location" id="contact">
+  <section class="location" id="contact">
     <div class="container">
       <div class="location__inner">
         <form class="location__details" action="/submit-data" method="POST" target="_blank">
@@ -409,48 +405,58 @@
         <div id="map"></div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <footer class="footer">
-    <div class="container">
-      <h2 class="footer__logo">
-        <img src="/images/footer-logo.svg" alt="logo">
-      </h2>
-      <ul class="footer__social">
-        <li><a href="https://www.facebook.com">FACEBOOK</a></li>
-        <li><a href="https://twitter.com">TWITTER</a></li>
-        <li><a href="">GOOGLE+</a></li>
-        <li><a href="https://www.behance.net">BEHANCE</a></li>
-        <li><a href="https://dribbble.com">DRIBBLE</a></li>
-        <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
-      </ul>
-      <div class="footer__details">
-        <p>Mese Selimovica 52, Banja Luka - BiH</p>
-        <a href="tel:00387-65-252-222">(00387) 65 252 222</a>
-        <a href="mailto:info@mail.com">info@mail.com</a>
-      </div>
-      <a class="footerlink" href="#header">
-        <svg width="56px" height="56px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#ffffff" stroke-width="0.00032"
-          transform="matrix(1, 0, 0, 1, 0, 0)">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <g id="icomoon-ignore"> </g>
-            <path
-              d="M16.767 12.809l-0.754-0.754-6.035 6.035 0.754 0.754 5.281-5.281 5.256 5.256 0.754-0.754-3.013-3.013z"
-              fill="#fff"> </path>
-          </g>
-        </svg>
-      </a>
+  <footer class="footer">
+
+    <h2 class="footer__logo">
+      <img src="/images/footer-logo.svg" alt="logo">
+    </h2>
+    <nav class="footer__menu menu-2 menu--open-2">
+      <button class="menu__btn-2">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <ul class="footer__social menu__list-2 ">
+      <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+      <li><a href="https://twitter.com">TWITTER</a></li>
+      <li><a href="">GOOGLE+</a></li>
+      <li><a href="https://www.behance.net">BEHANCE</a></li>
+      <li><a href="https://dribbble.com">DRIBBLE</a></li>
+      <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+    </ul>
+    <div class="footer__details">
+      <p>Mese Selimovica 52, Banja Luka - BiH</p>
+
+      <a href="tel:00387-65-252-222">(00387) 65 252 222</a>
+
+      <a href="mailto:info@mail.com">info@mail.com</a>
     </div>
+    <a class="footer__link" href="#header">
+      <svg width="56px" height="56px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#ffffff" stroke-width="0.00032"
+        transform="matrix(1, 0, 0, 1, 0, 0)">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <g id="icomoon-ignore"> </g>
+          <path d="M16.767 12.809l-0.754-0.754-6.035 6.035 0.754 0.754 5.281-5.281 5.256 5.256 0.754-0.754-3.013-3.013z"
+            fill="#fff"> </path>
+        </g>
+      </svg>
+    </a>
+
+
+
   </footer>
 
   <section class="bottom">
     <div class="container">
       <p>@2015 Oxygen Theme</p>
     </div>
-  </section> -->
+  </section>
 
 </body>
 

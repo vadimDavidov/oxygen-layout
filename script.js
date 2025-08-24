@@ -2,9 +2,21 @@
 // * Burger menu
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu');
+const menuBtn1 = document.querySelector('.menu__btn-1');
+const menu1 = document.querySelector('.menu-1');
+const menuBtn2 = document.querySelector('.menu__btn-2');
+const menu2 = document.querySelector('.menu-2');
 
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
+});
+
+menuBtn1.addEventListener('click', () => {
+  menu1.classList.toggle('menu--open-1');
+});
+
+menuBtn2.addEventListener('click', () => {
+  menu2.classList.toggle('menu--open-2');
 });
 
 // * Slider

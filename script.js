@@ -6,6 +6,11 @@ const menuBtn1 = document.querySelector('.menu__btn-1');
 const menu1 = document.querySelector('.menu-1');
 const menuBtn2 = document.querySelector('.menu__btn-2');
 const menu2 = document.querySelector('.menu-2');
+const menuList2 = document.querySelector('.menu__list-2');
+
+const coordY = window.scrollY;
+document.documentElement.style.setProperty('--coordY', coordY);
+console.log(coordY);
 
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
@@ -13,10 +18,12 @@ menuBtn.addEventListener('click', () => {
 
 menuBtn1.addEventListener('click', () => {
   menu1.classList.toggle('menu--open-1');
+  menuBtn1.classList.toggle('rotated');
 });
 
 menuBtn2.addEventListener('click', () => {
   menu2.classList.toggle('menu--open-2');
+  menuBtn2.classList.toggle('rotated');
 });
 
 // * Slider

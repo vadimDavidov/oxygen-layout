@@ -12,6 +12,7 @@ const coordY = window.scrollY;
 document.documentElement.style.setProperty('--coordY', coordY);
 console.log(coordY);
 
+// * Adaptive for menu
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
 });

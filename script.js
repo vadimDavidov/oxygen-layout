@@ -12,6 +12,23 @@ const coordY = window.scrollY;
 document.documentElement.style.setProperty('--coordY', coordY);
 console.log(coordY);
 
+// * Sections appearance
+const allSections = document.querySelectorAll('.section');
+const appearanceSection = function (entries, observer) {
+  const entry = entries[0];
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+};
+const sectionObserver = new IntersectionObserver(appearanceSection, {
+  root: null,
+  threshold: 0.4,
+});
+allSections.forEach(section => {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
+
 // * Adaptive for menu
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');

@@ -11,11 +11,11 @@ const portfolioList = document.querySelector('.portfolio__nav-list');
 const menuList2 = document.querySelector('.menu__list-2');
 
 // * Navigation links fading
-function fadingLinks(e, opacity) {
+function fadingLinks(e, opacity, closest) {
   if (e.target.classList.contains('nav-link')) {
     const linkOver = e.target;
     const siblingLinks = linkOver
-      .closest('.menu-list')
+      .closest(closest)
       .querySelectorAll('.nav-link');
 
     siblingLinks.forEach(link => {
@@ -26,16 +26,16 @@ function fadingLinks(e, opacity) {
   }
 }
 menuList.addEventListener('mouseover', e => {
-  fadingLinks(e, 0.4);
+  fadingLinks(e, 0.4, '.menu-list');
 });
 menuList.addEventListener('mouseout', e => {
-  fadingLinks(e, 1);
+  fadingLinks(e, 1, '.menu-list');
 });
 portfolioList.addEventListener('mouseover', e => {
-  fadingLinks(e, 0.4);
+  fadingLinks(e, 0.4, '.menu__list-1');
 });
 portfolioList.addEventListener('mouseout', e => {
-  fadingLinks(e, 1);
+  fadingLinks(e, 1, '.menu__list-1');
 });
 
 // * Sections appearance

@@ -6,11 +6,37 @@ const menuBtn1 = document.querySelector('.menu__btn-1');
 const menu1 = document.querySelector('.menu-1');
 const menuBtn2 = document.querySelector('.menu__btn-2');
 const menu2 = document.querySelector('.menu-2');
+const menuList = document.querySelector('.header__menu-list');
+const portfolioList = document.querySelector('.portfolio__nav-list');
 const menuList2 = document.querySelector('.menu__list-2');
 
-const coordY = window.scrollY;
-document.documentElement.style.setProperty('--coordY', coordY);
-console.log(coordY);
+// * Navigation links fading
+function fadingLinks(e, opacity) {
+  if (e.target.classList.contains('nav-link')) {
+    const linkOver = e.target;
+    const siblingLinks = linkOver
+      .closest('.menu-list')
+      .querySelectorAll('.nav-link');
+
+    siblingLinks.forEach(link => {
+      if (link !== linkOver) {
+        link.style.opacity = opacity;
+      }
+    });
+  }
+}
+menuList.addEventListener('mouseover', e => {
+  fadingLinks(e, 0.4);
+});
+menuList.addEventListener('mouseout', e => {
+  fadingLinks(e, 1);
+});
+portfolioList.addEventListener('mouseover', e => {
+  fadingLinks(e, 0.4);
+});
+portfolioList.addEventListener('mouseout', e => {
+  fadingLinks(e, 1);
+});
 
 // * Sections appearance
 const allSections = document.querySelectorAll('.section');

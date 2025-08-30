@@ -9,6 +9,51 @@ const menu2 = document.querySelector('.menu-2');
 const menuList = document.querySelector('.header__menu-list');
 const portfolioList = document.querySelector('.portfolio__nav-list');
 const menuList2 = document.querySelector('.menu__list-2');
+const sectionHeader = document.querySelector('.header');
+const header = document.querySelector('.header');
+const headerTop = document.querySelector('.header__top');
+
+// * Lazy loading for some images
+const lazyImages = document.querySelectorAll('img[data-src]');
+const loadImages = (entries, observer) => {
+  const entry = entries[0];
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+  entry.target.src = entry.target.dataset.src;
+  console.log(entry.target);
+  entry.target.addEventListener('load', () => {
+    entry.target.classList.remove('lazy-img');
+  });
+
+  observer.unobserve(entry.target);
+};
+const lazyImagesObserver = new IntersectionObserver(loadImages, {
+  root: null,
+  threshold: 0.7,
+});
+lazyImages.forEach(image => lazyImagesObserver.observe(image));
+
+// * Sticky navigation
+// const navHeight = headerTop.getBoundingClientRect().height;
+// const getStickyNav = entries => {
+//   const entry = entries[0];
+//   if (!entry.isIntersecting) {
+//     headerTop.classList.add('sticky');
+//   } else {
+//     headerTop.classList.remove('sticky');
+//   }
+//   if (window.innerWidth <= 1200) {
+//     headerTop.classList.remove('sticky');
+//   }
+// };
+
+// const headerObserver = new IntersectionObserver(getStickyNav, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: `${navHeight}px`,
+// });
+// headerObserver.observe(header);
 
 // * Navigation links fading
 function fadingLinks(e, opacity, closest) {

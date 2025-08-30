@@ -39,6 +39,15 @@ body {
   font-family: 'Raleway', 'sans-serif';
   font-size: 0.75rem;
 }
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .header__menu-list {
   display: flex;
   gap: 50px;
@@ -289,6 +298,9 @@ body {
   margin-bottom: 72px;
   background-color: #fff;
   columns: 343px;
+}
+.grid__item {
+  width: 343px;
 }
 .portfolio__item {
   display: flex;
@@ -642,6 +654,10 @@ body {
   width: 635px;
   height: 896px;
 }
+#map-small {
+  width: 200px;
+  height: 300px;
+}
 
 .footer {
   background-color: #373a39;
@@ -984,5 +1000,8 @@ body {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(9rem);
+  transform: translateY(10rem);
+}
+.lazy-img {
+  filter: blur(20px);
 }

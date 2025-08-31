@@ -820,7 +820,7 @@ body {
   }
   .menu__list-1 {
     position: fixed;
-    top: 30px;
+    top: 0;
     left: 0;
     right: 450px;
     bottom: 0;

@@ -130,6 +130,7 @@ allSections.forEach(section => {
 // * Adaptive for menu
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
+  menuBtn.classList.toggle('rotated');
 });
 
 menuBtn1.addEventListener('click', () => {

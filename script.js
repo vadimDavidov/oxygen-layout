@@ -12,16 +12,43 @@ const menuList2 = document.querySelector('.menu__list-2');
 const sectionHeader = document.querySelector('.header');
 const header = document.querySelector('.header');
 const headerTop = document.querySelector('.header__top');
+const footerSocialList = document.querySelector('.footer__social-list');
+const btnModalFooter = document.querySelector('.btn__modal--footer');
+const modalFooterList = document.querySelector('.modal__footer-list');
+const btnCloseModal = document.querySelector('.btn-close');
+const mapBlock = document.getElementById('map');
+
+// * Modal Footer
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 768) {
+    footerSocialList.classList.add('hidden');
+    btnModalFooter.classList.remove('hidden');
+  }
+  if (window.innerWidth > 768) {
+    footerSocialList.classList.remove('hidden');
+    btnModalFooter.classList.add('hidden');
+  }
+});
+
+btnModalFooter.addEventListener('click', () => {
+  modalFooterList.classList.remove('hidden');
+  btnModalFooter.classList.add('hidden');
+  mapBlock.classList.add('hidden');
+});
+
+btnCloseModal.addEventListener('click', () => {
+  modalFooterList.classList.add('hidden');
+  btnModalFooter.classList.remove('hidden');
+  mapBlock.classList.remove('hidden');
+});
 
 // * Lazy loading for some images
 const lazyImages = document.querySelectorAll('img[data-src]');
 const loadImages = (entries, observer) => {
   const entry = entries[0];
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
   entry.target.src = entry.target.dataset.src;
-  console.log(entry.target);
   entry.target.addEventListener('load', () => {
     entry.target.classList.remove('lazy-img');
   });
@@ -110,11 +137,6 @@ menuBtn1.addEventListener('click', () => {
   menuBtn1.classList.toggle('rotated');
 });
 
-menuBtn2.addEventListener('click', () => {
-  menu2.classList.toggle('menu--open-2');
-  menuBtn2.classList.toggle('rotated');
-});
-
 // * Slider
 let slides = document.querySelectorAll('.mySlides');
 let dots = document.querySelectorAll('.dot');
@@ -186,6 +208,7 @@ const brandingValue = (brandingEl.dataset.branding = '90');
 const designValue = (designEl.dataset.design = '80');
 const developmentValue = (developmentEl.dataset.development = '85');
 
+// * Branding chart
 brandingEl.innerHTML = brandingValue;
 designEl.innerHTML = designValue;
 developmentEl.innerHTML = developmentValue;

@@ -738,7 +738,7 @@ body {
 .rotated {
   transform: rotate(90deg);
 }
-.menu__btn-2 {
+.btn__modal--footer {
   display: none;
   width: 50px;
   height: 30px;
@@ -753,17 +753,60 @@ body {
   margin-bottom: 20px;
   transition: transform 0.5s ease-in-out;
 }
-.menu__btn-2 span {
+.btn__modal--footer span {
   width: 100%;
   height: 4px;
   background-color: #fff;
   transition: transform 0.5s;
 }
+.btn-close {
+  display: flex;
+  width: 50px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+.btn-close span {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: transform 0.5s;
+}
+
 .menu-2.menu--open-2 .menu__list-2 {
   transform: translateX(0);
 }
-.menu-2.menu--open-2 .menu__btn-2 span {
-  background-color: #fff;
+
+.btn__modal--footer {
+  display: flex;
+}
+.modal__footer-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #242121;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: transform 0.5s;
+  height: 100vh;
 }
 
 @media (max-width: 1400px) {
@@ -827,6 +870,9 @@ body {
   .location {
     padding-top: 150px;
   }
+  #map {
+    height: 500px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -877,31 +923,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .menu__btn-2 {
-    display: flex;
-  }
-  .menu__list-2 {
-    position: fixed;
-    top: 390px;
-    left: 500px;
-    right: 0;
-    bottom: 0;
-    background-color: #f2f2f2;
-    color: #242121;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-left: 20px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    transform: translateX(100%);
-    transition: transform 0.5s;
-    height: 575px;
-  }
-
   .about,
   .expertise,
   .magic__content,
@@ -1004,4 +1025,7 @@ body {
 }
 .lazy-img {
   filter: blur(20px);
+}
+.hidden {
+  display: none;
 }
